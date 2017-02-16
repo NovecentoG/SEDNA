@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Sedna</title>
+  <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAABAUlEQVQ4y6WTwW2EMBBFH1EKWHcQ0UBWogXTBycoAUrguGdOuVPCUMRuB6kAtoO/lxgtNiFSdqR/8Hj+15+xJ5PEXmRZ9gFUP8cvSd+7hZI2AE7ABVCEC3BK6iNyBdx3yAF3oEoEgDNwPSDGuALnZ4GVbGbq+34trutaZqaiKBKRZ4H1QpLMbD0XRSFJmuc5EZHE295gnXN47/He45xjGAacc5gZeZ6nrxA7OArv/cbB+56DYRgYx3H32adp+ttB27Yys2QeMX6dAcA4jizLQtd1HEVo4QZ8xm0AmBlN07AsS9zCDVgdVCERCoNIWZabnHMukKtkF/79lV9ZpuzVdX4AStlCtjbq/qIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<input type="checkbox" id="switch">
+<label for="switch" class="switch-label" id="first_click">a</label>
+<div class="container">
+  <div class="screen">
+
+
+  <img id="immagine" class="imgpos" width="1100px"/>
+  <img id="immagine_2" class="imgpos" width="1100px"/>
+  <img id="immagine_3" class="imgpos" width="1100px"/>
+  <img id="immagine_4" class="imgpos" width="1100px"/>
+  <img id="immagine_5" class="imgpos" width="1100px"/>
+
+  <div id="title" data-text="SEDNA" onmousemove="glitchIN()" onmouseout="glitchOUT()">SEDNA</div>
+
+
+  <div id="prompt">
+    <span class="text"></span>&#160&#160<span id="cursor">&#160&#160</span>
+  </div>
+
+
+<img src="assets/ui/back.png" id="back" class="bottone" width="32px" onclick="bconf()"> </img>
+<img src="assets/ui/notwk.png" id="alerbrowsIco" width="32px"> </img>
+<img src="assets/ui/notwk.png" id="alerResIco" width="32px"> </img>
+<div id="alertboxBrows">Per una migliore esperienza si consiglia di utilizzare browser come Chrome, Opera, Safari o Edge</div>
+<div id="alertboxRes"></div>
+<div id="back_page">
+  <div style="text-align:center;">Tornare alla schermata</br> del titolo?</div>
+  <div id="back_si" class="cbutton" onclick="back_reload()">Sì</div>
+  <div id="back_no" class="cbutton" onclick="back_cancel()">No</div>
+</div>
+
+<div id="background_intro"></div>
+
+
+<div id="cred1_hover">
+  <div id="cred1_page">
+    <div style="margin-right:10px; float:left;">
+      <div style="height:150px; margin:20px;"><img height="150px" id="profile_A" src="assets/ui/profile_A-150.png"><img width="150px" id="profile_AGli" src=""></div>
+      <div style="height:150px; margin:20px"><img height="150px" id="profile_B" src="assets/ui/profile_B-150.png"><img width="150px" id="profile_BGli" src=""></div>
+      <div style="height:150px; margin:20px"><img height="150px" id="profile_C" src="assets/ui/profile_C-150.png"><img width="150px" id="profile_CGli" src=""></div>
+    </div>
+    <div style="margin-right:10px; float:left;">
+      <div style="height:150px;margin-bottom:20px;margin-top:20px;"> Nicolò Azzolin <br> <span style="font-family:'8bit_italic';">nicolo.azzolin@gmail.com</span> </div>
+      <div style="height:150px;margin-bottom:20px;margin-top:20px;"> Andrea Picardi <br> <span style="font-family:'8bit_italic';">picardiandrea@virgilio.it</span> </div>
+      <div style="height:150px;margin-bottom:20px;margin-top:20px;"> Luca Sartore <br> <span style="font-family:'8bit_italic';">lucsar05@gmail.com</span> </div>
+    </div>
+    <div style="font-size:8px;color:gray; height:20px; width:100%; clear: both; text-align: center"> &#60 click out of this window to close &#62 </div>
+  </div>
+</div>
+
+<div id="cred2_hover">
+  <div id="cred2_page">
+    <div><span style="font-family:'8bit_bold';">Tratto dalla fiaba popolare <br> "Sedna regina degli Inferi"</span></div></br>
+
+    <div><span style="font-family:'8bit_bold';">Texture aggiuntive:</span>
+      <ul style="font-family:'8bit';">
+        <li>hdri-skies.com</li>
+        <li>vizpark.com</li>
+        <li>planetpixelemporium.com</li>
+        <li>priteeboy.deviantart.com</li>
+      <li>Space Engine</li></ul></div>
+
+    </br><div><span style="font-family:'8bit_bold';">Codice aggiuntivo:</span>
+      <ul style="font-family:'8bit';">
+        <li>CSS CRT screen effect, CSS Glitched Text <br> di Lucas Bebber</li>
+        <li>Typing effect basato su un codepen di Stathis</li>
+      </ul></div>
+
+    </br><div><span style="font-family:'8bit_bold';">Famiglie Tipografiche:</span>
+      <ul style="font-family:'8bit';">
+        <li>Unibody di Underware</li>
+        <li>Eurostile di Linotype</li></ul></div>
+        <br><br><br><br>
+  <div style="font-size:8px;color:gray; height:20px; width:100%; clear: both; text-align: center"> &#60 click out of this window to close &#62 </div>
+  </div>
+</div>
+
+    <div id="footer">
+    <div class="sx_footer" id="cartiglio">Politecnico di Milano, Scuola del Design <br>
+    Corso di Laurea in Design della Comunicazione <br>
+    Laboratorio di Computer Grafica, Sezione C1 <br>
+    Proff. M. Bertolo, F. Bruschi, V. Rana, M. Russo <br>
+    A.A. 2016/2017</div>
+    <div id="autori">Azzolin Nicolò - Picardi Andrea - Sartore Luca</div>
+    <img class="dx_footer bottone" src="assets/ui/cred2.png" width="64px" id="cred2">
+    <img class="dx_footer bottone" src="assets/ui/cred1.png" width="64px" id="cred1">
+    </div>
+
+
+</div>
+  <script src='js/jquery.min.js'></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
