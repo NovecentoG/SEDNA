@@ -95,7 +95,7 @@ body, html {
 #background_intro {
   position: absolute;
   z-index: 1;
-  background-image: url( "../assets/render/TitleScreen.png" );
+  background-image: url( "../assets/render/TitleScreen.jpg" );
   background-repeat:no-repeat;
   background-size:cover; /*per rendere lo sfondo responsive, da attivare solo dopo l'esame*/
   filter: blur(3px);
@@ -772,27 +772,27 @@ z-index: 2;
 /*Font Aggiunti*/
 @font-face {
   font-family: "8bit";
-  src: url("../assets/font/Unibody8Pro-Regular.otf") format("opentype");
+  src: url("../assets/font/Unibody8Pro-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "8bit_bold";
-  src: url("../assets/font/Unibody8Pro-Bold.otf") format("opentype");
+  src: url("../assets/font/Unibody8Pro-Bold.woff2") format("woff2");
 }
 @font-face {
   font-family: "8bit_italic";
-  src: url("../assets/font/Unibody8Pro-RegularItalic.otf") format("opentype");
+  src: url("../assets/font/Unibody8Pro-RegularItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "8bit_black";
-  src: url("../assets/font/Unibody8Pro-Black.otf") format("opentype");
+  src: url("../assets/font/Unibody8Pro-Black.woff2") format("woff2");
 }
 @font-face {
   font-family: "8bit_smallcaps";
-  src: url("../assets/font/Unibody8Pro-RegularSmallCaps.otf") format("opentype");
+  src: url("../assets/font/Unibody8Pro-RegularSmallCaps.woff2") format("woff2");
 }
 @font-face {
   font-family: "euro";
-  src: url("../assets/font/EurostileLTStd-Ex2.otf") format("OpenType");
+  src: url("../assets/font/EurostileLTStd-Ex2.woff2") format("woff2");
 }
 
 
@@ -882,7 +882,7 @@ z-index: 2;
   text-shadow: -1px 0 red;
   top: 0;
   color: white;
-  background-image: url( "../assets/render/TitleScreen.png" );
+  background-image: url( "../assets/render/TitleScreen.jpg" );
   background-repeat:no-repeat;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
@@ -962,7 +962,7 @@ z-index: 2;
   top: 0;
   color: white;
   background: #222;
-  background-image: url( "../assets/render/TitleScreen.png" );
+  background-image: url( "../assets/render/TitleScreen.jpg" );
   background-repeat:no-repeat;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);

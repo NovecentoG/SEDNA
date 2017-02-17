@@ -203,7 +203,7 @@ $(document).ready( function() {
   if (Ref_ProfA < 11) {
   $("#profile_A").css("display","none");
   $("#profile_AGli").css("display","block");
-  $("#profile_AGli").attr("src", "assets/ui/profile_A-g/" + Ref_ProfA + ".png");
+  $("#profile_AGli").attr("src", "assets/ui/profile_A-g/" + Ref_ProfA + ".jpg");
   }
 
   else {   $("#profile_AGli").css("display","none");  $("#profile_A").css("display","block"); }
@@ -219,7 +219,7 @@ $(document).ready( function() {
   if (Ref_ProfB < 10) {
   $("#profile_B").css("display","none");
   $("#profile_BGli").css("display","block");
-  $("#profile_BGli").attr("src", "assets/ui/profile_B-g/" + Ref_ProfB + ".png");
+  $("#profile_BGli").attr("src", "assets/ui/profile_B-g/" + Ref_ProfB + ".jpg");
   }
 
   else {   $("#profile_BGli").css("display","none");  $("#profile_B").css("display","block"); }
@@ -235,7 +235,7 @@ $(document).ready( function() {
   if (Ref_ProfC < 10) {
   $("#profile_C").css("display","none");
   $("#profile_CGli").css("display","block");
-  $("#profile_CGli").attr("src", "assets/ui/profile_C-g/" + Ref_ProfC + ".png");
+  $("#profile_CGli").attr("src", "assets/ui/profile_C-g/" + Ref_ProfC + ".jpg");
   }
 
   else {   $("#profile_CGli").css("display","none");  $("#profile_C").css("display","block"); }
@@ -259,7 +259,7 @@ $(document).on('click', '.continua_A', function() {
     next();
 })})
 
-$("#immagine").attr("src", "assets/render/TitleScreen.png")
+$("#immagine").attr("src", "assets/render/TitleScreen.jpg")
 
 
 //funzione per tornare alla schermata del titolo
@@ -358,7 +358,7 @@ $(document).on('click', '.intro2', function() {
 $(document).on('click', '.obs_ss', function() {
   $("#back_page").animate({top: "45%"},1000,"swing"); // alza il popup di uscita
   $("#prompt").css("animation","moveDown 2s ease-in forwards, reSise 1s ease-in forwards"); //abbassa il prompt e Rimpisciolscilo
-  $("#immagine").attr("src", "assets/render/obs-ss.png")
+  $("#immagine").attr("src", "assets/render/obs-ss.jpg")
   $("#immagine").css("animation","fadeIn 2s 1s ease-in forwards"); //Mostra l'immagine
   $('#immagine_2').css('display', 'block');
   $('#immagine_2').css('opacity', '1');
@@ -385,12 +385,12 @@ $(document).on('click', '.obs_ss', function() {
 
 
 $(document).on('click', '.Aoi-01', function() {
-    $("#immagine_2").attr("src", "assets/render/Aoi-01.png")
+    $("#immagine_2").attr("src", "assets/render/Aoi-01.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-      $(this).attr("src", "assets/render/Aoi-01.png");
+      $(this).attr("src", "assets/render/Aoi-01.jpg");
       next();
     });
     $("#immagine")
@@ -412,12 +412,12 @@ $(document).on('click', '.Aoi-02', function() {
   caption = Aoi_02 + "<br><br><div class='continua_A'> &#60--Answer the question to continue--&#62 </div>" ;
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Aoi-02.png")
+  $("#immagine_2").attr("src", "assets/render/Aoi-02.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-    $(this).attr("src", "assets/render/Aoi-02.png");
+    $(this).attr("src", "assets/render/Aoi-02.jpg");
     next();
   });
   $("#immagine")
@@ -435,12 +435,12 @@ $(document).on('click', '.Aoi-02a1', function() {
   caption = Aoi_02a1 + "<br><br><div class='continua Aoi-02a2' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-    $("#immagine_2").attr("src", "assets/render/Aoi-02a1.png")
+    $("#immagine_2").attr("src", "assets/render/Aoi-02a1.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-      $(this).attr("src", "assets/render/Aoi-02a1.png");
+      $(this).attr("src", "assets/render/Aoi-02a1.jpg");
       next();
     });
     $("#immagine")
@@ -458,14 +458,14 @@ $(document).on('click', '.Aoi-02a2', function() {
   caption = Aoi_02a2 + "<br><br><div class='continua Aoi-02a3' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Aoi-02a2.png")
+  $("#immagine_2").attr("src", "assets/render/Aoi-02a2.jpg")
 
   $("#immagine_3").css("opacity","1");
   var glitchAoi_02a2 = setInterval(function() {
     var Ref_Aoi_02a2 = (Math.floor(Math.random() * 30) + 0);
     if (Ref_Aoi_02a2 < 10) {
     $("#immagine_3").css("display","block")
-    $("#immagine_3").attr("src", "assets/render/Aoi-2a2-g/Aoi-02a2-"+ Ref_Aoi_02a2 +".png")
+    $("#immagine_3").attr("src", "assets/render/Aoi-2a2-g/Aoi-02a2-"+ Ref_Aoi_02a2 +".jpg")
     }
     else {   $("#immagine_3").css("display","none") }
   }, 350 //(Math.floor(Math.random() * (300 - 400 + 1)) + 300)
@@ -475,7 +475,7 @@ $(document).on('click', '.Aoi-02a2', function() {
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-    $(this).attr("src", "assets/render/Aoi-02a2.png");
+    $(this).attr("src", "assets/render/Aoi-02a2.jpg");
     next();
   });
   $("#immagine")
@@ -494,12 +494,12 @@ $(document).on('click', '.Aoi-02a3', function() {
   type();
 
   $("#immagine_3").css("opacity","0")
-  $("#immagine_2").attr("src", "assets/render/Aoi-02a3.png")
+  $("#immagine_2").attr("src", "assets/render/Aoi-02a3.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-    $(this).attr("src", "assets/render/Aoi-02a3.png");
+    $(this).attr("src", "assets/render/Aoi-02a3.jpg");
     next();
   });
   $("#immagine")
@@ -517,12 +517,12 @@ $(document).on('click', '.Aoi-02b1', function() {
     caption = Aoi_02b1 + "<br><br><div class='continua Aoi-02b2' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
     type();
 
-    $("#immagine_2").attr("src", "assets/render/Aoi-02b1.png")
+    $("#immagine_2").attr("src", "assets/render/Aoi-02b1.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-      $(this).attr("src", "assets/render/Aoi-02b1.png");
+      $(this).attr("src", "assets/render/Aoi-02b1.jpg");
       next();
     });
     $("#immagine")
@@ -540,14 +540,14 @@ $(document).on('click', '.Aoi-02b2', function() {
       caption = Aoi_02b2 + "<br><br><div class='continua Aoi-02b3' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
       type();
 
-      $("#immagine_2").attr("src", "assets/render/Aoi-02b2.png")
+      $("#immagine_2").attr("src", "assets/render/Aoi-02b2.jpg")
 
       $("#immagine_3").css("opacity","1");
       var glitchAoi_02b2 = setInterval(function() {
         var Ref_Aoi_02b2 = (Math.floor(Math.random() * 30) + 0);
         if (Ref_Aoi_02b2 < 10) {
         $("#immagine_3").css("display","block")
-        $("#immagine_3").attr("src", "assets/render/Aoi-2b2-g/Aoi-02b2-"+ Ref_Aoi_02b2 +".png")
+        $("#immagine_3").attr("src", "assets/render/Aoi-2b2-g/Aoi-02b2-"+ Ref_Aoi_02b2 +".jpg")
         }
         else {   $("#immagine_3").css("display","none") }
       }, 400 //(Math.floor(Math.random() * (300 - 400 + 1)) + 300)
@@ -558,7 +558,7 @@ $(document).on('click', '.Aoi-02b2', function() {
       $("#immagine")
       .delay(500)
       .queue(function (next) {
-        $(this).attr("src", "assets/render/Aoi-02b2.png");
+        $(this).attr("src", "assets/render/Aoi-02b2.jpg");
         next();
       });
       $("#immagine")
@@ -577,12 +577,12 @@ $(document).on('click', '.Aoi-02b3', function() {
         type();
 
         $("#immagine_3").css("opacity","0");
-        $("#immagine_2").attr("src", "assets/render/Aoi-02b3.png")
+        $("#immagine_2").attr("src", "assets/render/Aoi-02b3.jpg")
         $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
         $("#immagine")
         .delay(500)
         .queue(function (next) {
-          $(this).attr("src", "assets/render/Aoi-02b3.png");
+          $(this).attr("src", "assets/render/Aoi-02b3.jpg");
           next();
         });
         $("#immagine")
@@ -600,12 +600,12 @@ $(document).on('click', '.Aoe-02c1', function() {
           caption = Aoe_02c1 + "<br><br><div class='continua Aoe-02c2' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
           type();
 
-          $("#immagine_2").attr("src", "assets/render/Aoe-02c1.png")
+          $("#immagine_2").attr("src", "assets/render/Aoe-02c1.jpg")
           $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
           $("#immagine")
           .delay(500)
           .queue(function (next) {
-          $(this).attr("src", "assets/render/Aoe-02c1.png");
+          $(this).attr("src", "assets/render/Aoe-02c1.jpg");
           next();
           });
           $("#immagine")
@@ -623,14 +623,14 @@ $(document).on('click', '.Aoe-02c2', function() {
             caption = Aoe_02c2 + "<br><br><div class='continua Aoe-02c3' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
             type();
 
-                      $("#immagine_2").attr("src", "assets/render/Aoe-02c2.png")
+                      $("#immagine_2").attr("src", "assets/render/Aoe-02c2.jpg")
 
                       $("#immagine_3").css("opacity","1");
                       var glitchAoe_02c2 = setInterval(function() {
                         var Ref_Aoe_02c2 = (Math.floor(Math.random() * 30) + 0);
                         if (Ref_Aoe_02c2 < 10) {
                         $("#immagine_3").css("display","block")
-                        $("#immagine_3").attr("src", "assets/render/Aoe-2c2-g/Aoe-02c2-"+ Ref_Aoe_02c2 +".png")
+                        $("#immagine_3").attr("src", "assets/render/Aoe-2c2-g/Aoe-02c2-"+ Ref_Aoe_02c2 +".jpg")
                         }
                         else {   $("#immagine_3").css("display","none") }
                       }, 400 //(Math.floor(Math.random() * (300 - 400 + 1)) + 300)
@@ -640,7 +640,7 @@ $(document).on('click', '.Aoe-02c2', function() {
                       $("#immagine")
                       .delay(500)
                       .queue(function (next) {
-                      $(this).attr("src", "assets/render/Aoe-02c2.png");
+                      $(this).attr("src", "assets/render/Aoe-02c2.jpg");
                       next();
                       });
                       $("#immagine")
@@ -658,12 +658,12 @@ $(document).on('click', '.Aoe-02c3', function() {
   type();
 
   $("#immagine_3").css("opacity","0");
-  $("#immagine_2").attr("src", "assets/render/Aoe-02c3.png")
+  $("#immagine_2").attr("src", "assets/render/Aoe-02c3.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Aoe-02c3.png");
+  $(this).attr("src", "assets/render/Aoe-02c3.jpg");
   next();
   });
   $("#immagine")
@@ -681,12 +681,12 @@ $(document).on('click', '.Aoi-031', function() {
     caption = Aoi_031 + "<br><br><div class='continua Aoi-0312' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
     type();
 
-      $("#immagine_2").attr("src", "assets/render/Aoi-03.png")
+      $("#immagine_2").attr("src", "assets/render/Aoi-03.jpg")
       $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
       $("#immagine")
       .delay(500)
       .queue(function (next) {
-      $(this).attr("src", "assets/render/Aoi-03.png");
+      $(this).attr("src", "assets/render/Aoi-03.jpg");
       next();
       });
       $("#immagine")
@@ -704,12 +704,12 @@ $(document).on('click', '.Aoi-0312', function() {
       caption = Aoi_0312 + "<br><br><div class='continua Aoi-032' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
       type();
 
-      $("#immagine_2").attr("src", "assets/render/Aoi-03.png")
+      $("#immagine_2").attr("src", "assets/render/Aoi-03.jpg")
       $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
       $("#immagine")
       .delay(500)
       .queue(function (next) {
-      $(this).attr("src", "assets/render/Aoi-03.png");
+      $(this).attr("src", "assets/render/Aoi-03.jpg");
       next();
       });
       $("#immagine")
@@ -727,12 +727,12 @@ $(document).on('click', '.Aoi-032', function() {
         caption = Aoi_032 + "<br><br><div class='continua_A'> &#60--Answer the question to continue--&#62 </div>";
         type();
 
-        $("#immagine_2").attr("src", "assets/render/Aoi-03.png")
+        $("#immagine_2").attr("src", "assets/render/Aoi-03.jpg")
         $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
         $("#immagine")
         .delay(500)
         .queue(function (next) {
-        $(this).attr("src", "assets/render/Aoi-03.png");
+        $(this).attr("src", "assets/render/Aoi-03.jpg");
         next();
         });
         $("#immagine")
@@ -749,12 +749,12 @@ $(document).on('click', '.Boi-01', function() {
           caption = Boi_01 + "<br><br><div class='continua alc_ssa' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
           type();
 
-          $("#immagine_2").attr("src", "assets/render/Boi-01.png")
+          $("#immagine_2").attr("src", "assets/render/Boi-01.jpg")
           $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
           $("#immagine")
           .delay(500)
           .queue(function (next) {
-          $(this).attr("src", "assets/render/Boi-01.png");
+          $(this).attr("src", "assets/render/Boi-01.jpg");
           next();
           });
           $("#immagine")
@@ -773,12 +773,12 @@ $(document).on('click', '.alc_ssa', function() {
             caption = alc_ssa + "<br><br><div class='continua Bai-01' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
             type();
 
-            $("#immagine_2").attr("src", "assets/render/Alc-ss.png")
+            $("#immagine_2").attr("src", "assets/render/Alc-ss.jpg")
             $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
             $("#immagine")
             .delay(500)
             .queue(function (next) {
-            $(this).attr("src", "assets/render/Alc-ss.png");
+            $(this).attr("src", "assets/render/Alc-ss.jpg");
             next();
             });
             $("#immagine")
@@ -800,18 +800,18 @@ $(document).on('click', '.Bai-01', function() {
                 var Ref_Bai_01 = (Math.floor(Math.random() * 35) + 0);
                 if (Ref_Bai_01 < 10) {
                 $("#immagine_4").css("display","block")
-                $("#immagine_4").attr("src", "assets/render/Bai-01-g/Bai-01-"+ Ref_Bai_01 +".png")
+                $("#immagine_4").attr("src", "assets/render/Bai-01-g/Bai-01-"+ Ref_Bai_01 +".jpg")
                 }
                 else {   $("#immagine_4").css("display","none") }
               }, 350 //(Math.floor(Math.random() * (300 - 400 + 1)) + 300)
             );
 
-              $("#immagine_2").attr("src", "assets/render/Bai-01.png")
+              $("#immagine_2").attr("src", "assets/render/Bai-01.jpg")
               $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
               $("#immagine")
               .delay(500)
               .queue(function (next) {
-              $(this).attr("src", "assets/render/Bai-01.png");
+              $(this).attr("src", "assets/render/Bai-01.jpg");
               next();
               });
               $("#immagine")
@@ -829,12 +829,12 @@ $(document).on('click', '.Bai-02', function() {
                 type();
 
                 $("#immagine_4").css("opacity","0")
-                $("#immagine_2").attr("src", "assets/render/Bai-02.png")
+                $("#immagine_2").attr("src", "assets/render/Bai-02.jpg")
                 $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
                 $("#immagine")
                 .delay(500)
                 .queue(function (next) {
-                $(this).attr("src", "assets/render/Bai-02.png");
+                $(this).attr("src", "assets/render/Bai-02.jpg");
                 next();
                 });
                 $("#immagine")
@@ -851,12 +851,12 @@ $(document).on('click', '.Bai-021', function() {
   caption = Bai_021 + "<br><br><div class='continua Bai-031' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Bai-02.png")
+  $("#immagine_2").attr("src", "assets/render/Bai-02.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Bai-02.png");
+  $(this).attr("src", "assets/render/Bai-02.jpg");
   next();
   });
   $("#immagine")
@@ -874,12 +874,12 @@ $(document).on('click', '.Bai-031', function() {
   caption = Bai_031 + "<br><br><div class='continua Bai-032' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Bai-03.png")
+  $("#immagine_2").attr("src", "assets/render/Bai-03.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Bai-03.png");
+  $(this).attr("src", "assets/render/Bai-03.jpg");
   next();
   });
   $("#immagine")
@@ -905,7 +905,7 @@ $(document).on('click', '.Bai-031', function() {
     next();
   });
 
-    $("#immagine").attr("src", "assets/render/Bai-03.png")
+    $("#immagine").attr("src", "assets/render/Bai-03.jpg")
 });*/
 
 $(document).on('click', '.Bai-04', function() {
@@ -914,12 +914,12 @@ $(document).on('click', '.Bai-04', function() {
   caption = Bai_04 + "<br><br><div class='continua Bai-05' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Bai-04.png")
+  $("#immagine_2").attr("src", "assets/render/Bai-04.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Bai-04.png");
+  $(this).attr("src", "assets/render/Bai-04.jpg");
   next();
   });
   $("#immagine")
@@ -937,12 +937,12 @@ $(document).on('click', '.Bai-05', function() {
   caption = Bai_05 + "<br><br><div class='continua Bae-06' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Bai-05.png")
+  $("#immagine_2").attr("src", "assets/render/Bai-05.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Bai-05.png");
+  $(this).attr("src", "assets/render/Bai-05.jpg");
   next();
   });
   $("#immagine")
@@ -960,12 +960,12 @@ $(document).on('click', '.Bae-06', function() {
   caption = Bae_06 + "<br><br><div class='continua Bae-07' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Bae-06.png")
+  $("#immagine_2").attr("src", "assets/render/Bae-06.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Bae-06.png");
+  $(this).attr("src", "assets/render/Bae-06.jpg");
   next();
   });
   $("#immagine")
@@ -983,12 +983,12 @@ $(document).on('click', '.Bae-07', function() {
   caption = Bae_07 + "<br><br><div class='continua Mini-Gioco' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Bae-07.png")
+  $("#immagine_2").attr("src", "assets/render/Bae-07.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Bae-07.png");
+  $(this).attr("src", "assets/render/Bae-07.jpg");
   next();
   });
   $("#immagine")
@@ -1097,7 +1097,7 @@ $(document).on('click', '.Mini-Gioco', function() {
         if (cod_esatto == cod_input) {
             terminaleEnd = true;
             $(".text").html(Mini_GiocoY)
-            $("#immagine").attr("src", "assets/render/Bae-07.png")
+            $("#immagine").attr("src", "assets/render/Bae-07.jpg")
             setTimeout(function(){
             $("#prompt").css("animation","moveDown_miniGame 1s 1 forwards, rise_down_miniGame 1s 1 forwards, change_BC_out 1s 1 forwards");
             $("input[type=button]").css("animation","change_BC_out 1s 1 forwards");
@@ -1108,12 +1108,12 @@ $(document).on('click', '.Mini-Gioco', function() {
             type();
 
             $("#immagine_2").css("animation", "fadeIn 0.5s ease-out forwards")
-            $("#immagine_2").attr("src", "assets/render/Bae-7a1.png")
+            $("#immagine_2").attr("src", "assets/render/Bae-7a1.jpg")
             $("#immagine").css("animation", "fadeOut 0.5s 1.5s ease-in forwards")
             $("#immagine")
             .delay(500)
             .queue(function (next) {
-            $(this).attr("src", "assets/render/Bae-7a1.png");
+            $(this).attr("src", "assets/render/Bae-7a1.jpg");
             next();
             });
             $("#immagine")
@@ -1170,7 +1170,7 @@ function Pulisci_tempconsole () {
     function errorTrasm () {
       terminaleEnd = true;
       $(".text").html(Mini_GiocoX)
-      $("#immagine").attr("src", "assets/render/Bae-07.png")
+      $("#immagine").attr("src", "assets/render/Bae-07.jpg")
       setTimeout(function(){
         $("#prompt").css("animation","moveDown_miniGame 1s 1 forwards, rise_down_miniGame 1s 1 forwards, change_BC_out 1s 1 forwards");
         $("input[type=button]").css("animation","change_BC_out 1s 1 forwards");
@@ -1181,12 +1181,12 @@ function Pulisci_tempconsole () {
         type();
 
         $("#immagine_2").css("animation", "fadeIn 0.5s ease-out forwards")
-        $("#immagine_2").attr("src", "assets/render/Bae-7b1.png")
+        $("#immagine_2").attr("src", "assets/render/Bae-7b1.jpg")
         $("#immagine").css("animation", "fadeOut 0.5s 1.5s ease-in forwards")
         $("#immagine")
         .delay(500)
         .queue(function (next) {
-          $(this).attr("src", "assets/render/Bae-7b1.png");
+          $(this).attr("src", "assets/render/Bae-7b1.jpg");
           next();
         });
         $("#immagine")
@@ -1213,14 +1213,14 @@ $(document).on('click', '.Bae-07b2', function() {
   caption = Bae_07b2;
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Bae-7b2.png")
+  $("#immagine_2").attr("src", "assets/render/Bae-7b2.jpg")
 
   $("#immagine_5").css("opacity","1");
   var glitchBae_07b2 = setInterval(function() {
     var Ref_Bae_07b2 = (Math.floor(Math.random() * 35) + 0);
     if (Ref_Bae_07b2 < 10) {
     $("#immagine_5").css("display","block")
-    $("#immagine_5").attr("src", "assets/render/Bae-07b2-g/Bae-7b2-"+ Ref_Bae_07b2 +".png")
+    $("#immagine_5").attr("src", "assets/render/Bae-07b2-g/Bae-7b2-"+ Ref_Bae_07b2 +".jpg")
     }
     else {   $("#immagine_5").css("display","none") }
     }, 250 //(Math.floor(Math.random() * (300 - 400 + 1)) + 300)
@@ -1230,7 +1230,7 @@ $(document).on('click', '.Bae-07b2', function() {
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Bae-7b2.png");
+  $(this).attr("src", "assets/render/Bae-7b2.jpg");
   next();
   });
   $("#immagine")
@@ -1248,12 +1248,12 @@ $(document).on('click', '.alc-ssc', function() {
     caption = alc_ssc + "<br><br><div class='continua Dae-01pre' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
     type();
 
-    $("#immagine_2").attr("src", "assets/render/Alc-ss.png")
+    $("#immagine_2").attr("src", "assets/render/Alc-ss.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-    $(this).attr("src", "assets/render/Alc-ss.png");
+    $(this).attr("src", "assets/render/Alc-ss.jpg");
     next();
     });
     $("#immagine")
@@ -1271,12 +1271,12 @@ $(document).on('click', '.Dae-01pre', function() {
   caption = Dae_01pre + "<br><br><div class='continua Dae-01' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Dae-01pre.png")
+  $("#immagine_2").attr("src", "assets/render/Dae-01pre.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Dae-01pre.png");
+  $(this).attr("src", "assets/render/Dae-01pre.jpg");
   next();
   });
   $("#immagine")
@@ -1294,12 +1294,12 @@ $(document).on('click', '.Dae-01', function() {
     caption = Dae_01 + "<br><br><div class='continua Dae-012' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
     type();
 
-    $("#immagine_2").attr("src", "assets/render/Dae-01.png")
+    $("#immagine_2").attr("src", "assets/render/Dae-01.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-    $(this).attr("src", "assets/render/Dae-01.png");
+    $(this).attr("src", "assets/render/Dae-01.jpg");
     next();
     });
     $("#immagine")
@@ -1318,12 +1318,12 @@ $(document).on('click', '.Dae-012', function() {
         caption = Dae_012 + "<br><br><div class='continua Dae-02a' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
         type();
 
-        $("#immagine_2").attr("src", "assets/render/Dae-01.png")
+        $("#immagine_2").attr("src", "assets/render/Dae-01.jpg")
         $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
         $("#immagine")
         .delay(500)
         .queue(function (next) {
-        $(this).attr("src", "assets/render/Dae-01.png");
+        $(this).attr("src", "assets/render/Dae-01.jpg");
         next();
         });
         $("#immagine")
@@ -1340,12 +1340,12 @@ $(document).on('click', '.Dae-012', function() {
        caption = Dae_012 + "<br><br><div class='continua Dae-02b' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
        type();
 
-       $("#immagine_2").attr("src", "assets/render/Dae-01.png")
+       $("#immagine_2").attr("src", "assets/render/Dae-01.jpg")
        $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
        $("#immagine")
        .delay(500)
        .queue(function (next) {
-       $(this).attr("src", "assets/render/Dae-01.png");
+       $(this).attr("src", "assets/render/Dae-01.jpg");
        next();
        });
        $("#immagine")
@@ -1363,12 +1363,12 @@ $(document).on('click', '.Dae-02a', function() {
   caption = Dae_02a + "<br><br><div class='continua Dae-02a_1' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-    $("#immagine_2").attr("src", "assets/render/Dae-02.png")
+    $("#immagine_2").attr("src", "assets/render/Dae-02.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-    $(this).attr("src", "assets/render/Dae-02.png");
+    $(this).attr("src", "assets/render/Dae-02.jpg");
     next();
     });
     $("#immagine")
@@ -1386,12 +1386,12 @@ $(document).on('click', '.Dae-02a_1', function() {
   caption = Dae_02a_1 + "<br><br><div class='continua Dae-031' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Dae-02.png")
+  $("#immagine_2").attr("src", "assets/render/Dae-02.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Dae-02.png");
+  $(this).attr("src", "assets/render/Dae-02.jpg");
   next();
   });
   $("#immagine")
@@ -1409,12 +1409,12 @@ $(document).on('click', '.Dae-02b', function() {
     caption = Dae_02b + "<br><br><div class='continua Dae-02b_1' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
     type();
 
-    $("#immagine_2").attr("src", "assets/render/Dae-02.png")
+    $("#immagine_2").attr("src", "assets/render/Dae-02.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-    $(this).attr("src", "assets/render/Dae-02.png");
+    $(this).attr("src", "assets/render/Dae-02.jpg");
     next();
     });
     $("#immagine")
@@ -1432,12 +1432,12 @@ $(document).on('click', '.Dae-02b_1', function() {
   caption = Dae_02b_1 + "<br><br><div class='continua Dae-031' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Dae-02.png")
+  $("#immagine_2").attr("src", "assets/render/Dae-02.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Dae-02.png");
+  $(this).attr("src", "assets/render/Dae-02.jpg");
   next();
   });
   $("#immagine")
@@ -1455,12 +1455,12 @@ $(document).on('click', '.Dae-031', function() {
   caption = Dae_031 + "<br><br><div class='continua Dae-032' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Dae-03.png")
+  $("#immagine_2").attr("src", "assets/render/Dae-03.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Dae-03.png");
+  $(this).attr("src", "assets/render/Dae-03.jpg");
   next();
   });
   $("#immagine")
@@ -1484,12 +1484,12 @@ $(document).on('click', '.Dae-032', function() {
         caption = Dae_03c1 + "<br><br><div class='continua Dae-03c2' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
         type();
 
-            $("#immagine_2").attr("src", "assets/render/Dae-03c1.png")
+            $("#immagine_2").attr("src", "assets/render/Dae-03c1.jpg")
             $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
             $("#immagine")
             .delay(500)
             .queue(function (next) {
-            $(this).attr("src", "assets/render/Dae-03c1.png");
+            $(this).attr("src", "assets/render/Dae-03c1.jpg");
             next();
             });
             $("#immagine")
@@ -1507,12 +1507,12 @@ $(document).on('click', '.Dae-032', function() {
       caption = Dae_03a1 + "<br><br><div class='continua Dae-03a2' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
       type();
 
-      $("#immagine_2").attr("src", "assets/render/Dae-03a1.png")
+      $("#immagine_2").attr("src", "assets/render/Dae-03a1.jpg")
       $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
       $("#immagine")
       .delay(500)
       .queue(function (next) {
-      $(this).attr("src", "assets/render/Dae-03a1.png");
+      $(this).attr("src", "assets/render/Dae-03a1.jpg");
       next();
       });
       $("#immagine")
@@ -1531,12 +1531,12 @@ $(document).on('click', '.Dae-032', function() {
       caption = Dae_03b1 + "<br><br><div class='continua Dae-03b2' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
       type();
 
-      $("#immagine_2").attr("src", "assets/render/Dae-03b1.png")
+      $("#immagine_2").attr("src", "assets/render/Dae-03b1.jpg")
       $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
       $("#immagine")
       .delay(500)
       .queue(function (next) {
-      $(this).attr("src", "assets/render/Dae-03b1.png");
+      $(this).attr("src", "assets/render/Dae-03b1.jpg");
       next();
       });
       $("#immagine")
@@ -1557,12 +1557,12 @@ $(document).on('click', '.Dae-03a2', function() {
   caption = Dae_03a2 + "<br><br><div class='continua obs-ss-alt' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Dae-03a2.png")
+  $("#immagine_2").attr("src", "assets/render/Dae-03a2.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Dae-03a2.png");
+  $(this).attr("src", "assets/render/Dae-03a2.jpg");
   next();
   });
   $("#immagine")
@@ -1579,12 +1579,12 @@ $(document).on('click', '.obs-ss-alt', function() {
   caption = obs_ss_alt + "<br><br><div class='continua Doe-03a3' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/obs-ss.png")
+  $("#immagine_2").attr("src", "assets/render/obs-ss.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/obs-ss.png");
+  $(this).attr("src", "assets/render/obs-ss.jpg");
   next();
   });
   $("#immagine")
@@ -1601,12 +1601,12 @@ $(document).on('click', '.Doe-03a3', function() {
   caption = Doe_03a3 + "<br><br><div class='continua fin-tra' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Doe-03a3.png")
+  $("#immagine_2").attr("src", "assets/render/Doe-03a3.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Doe-03a3.png");
+  $(this).attr("src", "assets/render/Doe-03a3.jpg");
   next();
   });
   $("#immagine")
@@ -1623,12 +1623,12 @@ $(document).on('click', '.fin-tra', function() {
     caption = fin_tra;
     type();
 
-    $("#immagine_2").attr("src", "assets/render/fin-tra.png")
+    $("#immagine_2").attr("src", "assets/render/fin-tra.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-    $(this).attr("src", "assets/render/fin-tra.png");
+    $(this).attr("src", "assets/render/fin-tra.jpg");
     next();
     });
     $("#immagine")
@@ -1645,12 +1645,12 @@ $(document).on('click', '.Dae-03b2', function() {
   caption = Dae_03b2 + "<br><br><div class='continua Dae-03b2_1' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
     type();
 
-    $("#immagine_2").attr("src", "assets/render/Dae-03b2.png")
+    $("#immagine_2").attr("src", "assets/render/Dae-03b2.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-    $(this).attr("src", "assets/render/Dae-03b2.png");
+    $(this).attr("src", "assets/render/Dae-03b2.jpg");
     next();
     });
     $("#immagine")
@@ -1667,12 +1667,12 @@ $(document).on('click', '.Dae-03b2_1', function() {
   caption = Dae_03b2_1 + "<br><br><div class='continua Dae-03b3' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
     type();
 
-    $("#immagine_2").attr("src", "assets/render/Dae-03b2.png")
+    $("#immagine_2").attr("src", "assets/render/Dae-03b2.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-    $(this).attr("src", "assets/render/Dae-03b2.png");
+    $(this).attr("src", "assets/render/Dae-03b2.jpg");
     next();
     });
     $("#immagine")
@@ -1689,12 +1689,12 @@ $(document).on('click', '.Dae-03b3', function() {
   caption = Dae_03b3 + "<br><br><div class='continua fin-uff' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
     type();
 
-    $("#immagine_2").attr("src", "assets/render/Dae-03b3.png")
+    $("#immagine_2").attr("src", "assets/render/Dae-03b3.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-    $(this).attr("src", "assets/render/Dae-03b3.png");
+    $(this).attr("src", "assets/render/Dae-03b3.jpg");
     next();
     });
     $("#immagine")
@@ -1711,12 +1711,12 @@ $(document).on('click', '.fin-uff', function() {
   caption = fin_uff;
     type();
 
-    $("#immagine_2").attr("src", "assets/render/fin-uff.png")
+    $("#immagine_2").attr("src", "assets/render/fin-uff.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-    $(this).attr("src", "assets/render/fin-uff.png");
+    $(this).attr("src", "assets/render/fin-uff.jpg");
     next();
     });
     $("#immagine")
@@ -1733,12 +1733,12 @@ $(document).on('click', '.Dae-03c1', function() {
   caption = Dae_03c1 + "<br><br><div class='continua Dae-03c2' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-      $("#immagine_2").attr("src", "assets/render/Dae-03c1.png")
+      $("#immagine_2").attr("src", "assets/render/Dae-03c1.jpg")
       $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
       $("#immagine")
       .delay(500)
       .queue(function (next) {
-      $(this).attr("src", "assets/render/Dae-03c1.png");
+      $(this).attr("src", "assets/render/Dae-03c1.jpg");
       next();
       });
       $("#immagine")
@@ -1755,12 +1755,12 @@ $(document).on('click', '.Dae-03c2', function() {
   caption = Dae_03c2 + "<br><br><div class='continua alc-sse' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Dae-03c2.png")
+  $("#immagine_2").attr("src", "assets/render/Dae-03c2.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Dae-03c2.png");
+  $(this).attr("src", "assets/render/Dae-03c2.jpg");
   next();
   });
   $("#immagine")
@@ -1777,12 +1777,12 @@ $(document).on('click', '.alc-sse', function() {
     caption = alc_ssb + "<br><br><div class='continua Dai-03c3' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
     type();
 
-    $("#immagine_2").attr("src", "assets/render/Alc-ss.png")
+    $("#immagine_2").attr("src", "assets/render/Alc-ss.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-    $(this).attr("src", "assets/render/Alc-ss.png");
+    $(this).attr("src", "assets/render/Alc-ss.jpg");
     next();
     });
     $("#immagine")
@@ -1799,12 +1799,12 @@ $(document).on('click', '.Dai-03c3', function() {
   caption = Dai_03c3 + "<br><br><div class='continua fin-alt2b' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Dai-03c3.png")
+  $("#immagine_2").attr("src", "assets/render/Dai-03c3.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Dai-03c3.png");
+  $(this).attr("src", "assets/render/Dai-03c3.jpg");
   next();
   });
   $("#immagine")
@@ -1821,12 +1821,12 @@ $(document).on('click', '.fin-alt2a', function() {
   caption = fin_alt2a + "<br><br><div class='continua fin-alt1' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/fin-alt2.png")
+  $("#immagine_2").attr("src", "assets/render/fin-alt2.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/fin-alt2.png");
+  $(this).attr("src", "assets/render/fin-alt2.jpg");
   next();
   });
   $("#immagine")
@@ -1843,12 +1843,12 @@ $(document).on('click', '.fin-alt2b', function() {
   caption = fin_alt2b + "<br><br><div class='continua fin-alt1' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";;
   type();
 
-  $("#immagine_2").attr("src", "assets/render/fin-alt2.png")
+  $("#immagine_2").attr("src", "assets/render/fin-alt2.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/fin-alt2.png");
+  $(this).attr("src", "assets/render/fin-alt2.jpg");
   next();
   });
   $("#immagine")
@@ -1868,12 +1868,12 @@ $(document).on('click', '.Coi-01', function() {
     caption = Coi_01 + "<br><br><div class='continua Coi-012' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
     type();
 
-    $("#immagine_2").attr("src", "assets/render/Coi-01.png")
+    $("#immagine_2").attr("src", "assets/render/Coi-01.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-    $(this).attr("src", "assets/render/Coi-01.png");
+    $(this).attr("src", "assets/render/Coi-01.jpg");
     next();
     });
     $("#immagine")
@@ -1889,12 +1889,12 @@ $(document).on('click', '.Coi-012', function() {
   caption = Coi_012 + "<br><br><div class='continua Coi-02' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Coi-01.png")
+  $("#immagine_2").attr("src", "assets/render/Coi-01.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Coi-01.png");
+  $(this).attr("src", "assets/render/Coi-01.jpg");
   next();
   });
   $("#immagine")
@@ -1911,12 +1911,12 @@ $(document).on('click', '.Coi-02', function() {
   caption = Coi_02 + "<br><br><div class='continua Coi-03' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Coi-02.png")
+  $("#immagine_2").attr("src", "assets/render/Coi-02.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Coi-02.png");
+  $(this).attr("src", "assets/render/Coi-02.jpg");
   next();
   });
   $("#immagine")
@@ -1933,14 +1933,14 @@ $(document).on('click', '.Coi-03', function() {
   caption = Coi_03 + "<br><br><div class='continua Coi-031' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Coi-03.png")
+  $("#immagine_2").attr("src", "assets/render/Coi-03.jpg")
 
   $("#immagine_4").css("opacity","1");
   var glitchCoi_03 = setInterval(function() {
     var Ref_Coi_03 = (Math.floor(Math.random() * 25) + 0);
     if (Ref_Coi_03 < 10) {
     $("#immagine_4").css("display","block")
-    $("#immagine_4").attr("src", "assets/render/Coi-03-g/Coi-03-"+ Ref_Coi_03 +".png")
+    $("#immagine_4").attr("src", "assets/render/Coi-03-g/Coi-03-"+ Ref_Coi_03 +".jpg")
     }
     else {   $("#immagine_4").css("display","none") }
   }, 150 //(Math.floor(Math.random() * (100 - 150 + 1)) + 100)
@@ -1950,7 +1950,7 @@ $(document).on('click', '.Coi-03', function() {
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Coi-03.png");
+  $(this).attr("src", "assets/render/Coi-03.jpg");
   next();
   });
   $("#immagine")
@@ -1967,12 +1967,12 @@ $(document).on('click', '.Coi-031', function() {
   caption = Coi_031 + "<br><br><div class='continua Coi-04' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Coi-03.png")
+  $("#immagine_2").attr("src", "assets/render/Coi-03.jpg")
   $("#immagine").css("animation", "fadeOut 0.5ss ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Coi-03.png");
+  $(this).attr("src", "assets/render/Coi-03.jpg");
   next();
   });
   $("#immagine")
@@ -1990,12 +1990,12 @@ $(document).on('click', '.Coi-04', function() {
   type();
 
   $("#immagine_4").css("opacity","0");
-  $("#immagine_2").attr("src", "assets/render/Coi-04.png")
+  $("#immagine_2").attr("src", "assets/render/Coi-04.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Coi-04.png");
+  $(this).attr("src", "assets/render/Coi-04.jpg");
   next();
   });
   $("#immagine")
@@ -2010,12 +2010,12 @@ $(document).on('click', '.Coi-04', function() {
         caption = Coi_04c1 + "<br><br><div class='continua Coi-04c2' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
         type();
 
-        $("#immagine_2").attr("src", "assets/render/Coi-04c1.png")
+        $("#immagine_2").attr("src", "assets/render/Coi-04c1.jpg")
         $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
         $("#immagine")
         .delay(500)
         .queue(function (next) {
-        $(this).attr("src", "assets/render/Coi-04c1.png");
+        $(this).attr("src", "assets/render/Coi-04c1.jpg");
         next();
         });
         $("#immagine")
@@ -2032,12 +2032,12 @@ $(document).on('click', '.Coi-04a1', function() {
     caption = Coi_04a1 + "<br><br><div class='continua Coi-04a2' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
     type();
 
-    $("#immagine_2").attr("src", "assets/render/Coi-04a1.png")
+    $("#immagine_2").attr("src", "assets/render/Coi-04a1.jpg")
     $("#immagine").css("animation", "fadeOut 0.5ss ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-    $(this).attr("src", "assets/render/Coi-04a1.png");
+    $(this).attr("src", "assets/render/Coi-04a1.jpg");
     next();
     });
     $("#immagine")
@@ -2056,12 +2056,12 @@ $(document).on('click', '.Coi-04b1', function() {
     caption = Coi_04b1 + "<br><br><div class='continua Coi-04b12' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
     type();
 
-    $("#immagine_2").attr("src", "assets/render/Coi-04b1.png")
+    $("#immagine_2").attr("src", "assets/render/Coi-04b1.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-    $(this).attr("src", "assets/render/Coi-04b1.png");
+    $(this).attr("src", "assets/render/Coi-04b1.jpg");
     next();
     });
     $("#immagine")
@@ -2080,12 +2080,12 @@ $(document).on('click', '.Coi-04b12', function() {
     caption = Coi_04b12 + "<br><br><div class='continua alc-ssd' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
     type();
 
-    $("#immagine_2").attr("src", "assets/render/Coi-04b1.png")
+    $("#immagine_2").attr("src", "assets/render/Coi-04b1.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-    $(this).attr("src", "assets/render/Coi-04b1.png");
+    $(this).attr("src", "assets/render/Coi-04b1.jpg");
     next();
     });
     $("#immagine")
@@ -2107,14 +2107,14 @@ $(document).on('click', '.Coi-04a2', function() {
       type();
 
 
-          $("#immagine_2").attr("src", "assets/render/Coi-04a2.png")
+          $("#immagine_2").attr("src", "assets/render/Coi-04a2.jpg")
 
           $("#immagine_5").css("opacity","1");
           var glitchAoi_Coi_04a2 = setInterval(function() {
             var Ref_Aoi__Coi_04a2 = (Math.floor(Math.random() * 35) + 0);
             if (Ref_Aoi__Coi_04a2 < 10) {
             $("#immagine_5").css("display","block")
-            $("#immagine_5").attr("src", "assets/render/Coi-04a2-g/Coi-04a2-"+ Ref_Aoi__Coi_04a2 +".png")
+            $("#immagine_5").attr("src", "assets/render/Coi-04a2-g/Coi-04a2-"+ Ref_Aoi__Coi_04a2 +".jpg")
             }
             else {   $("#immagine_5").css("display","none") }
           }, 250 //(Math.floor(Math.random() * (300 - 400 + 1)) + 300)
@@ -2124,7 +2124,7 @@ $(document).on('click', '.Coi-04a2', function() {
           $("#immagine")
           .delay(500)
           .queue(function (next) {
-          $(this).attr("src", "assets/render/Coi-04a2.png");
+          $(this).attr("src", "assets/render/Coi-04a2.jpg");
           next();
           });
           $("#immagine")
@@ -2142,12 +2142,12 @@ $(document).on('click', '.Coi-04a2', function() {
     caption = Coi_04c1 + "<br><br><div class='continua Coi-04c2' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
     type();
 
-    $("#immagine_2").attr("src", "assets/render/Coi-04c1.png")
+    $("#immagine_2").attr("src", "assets/render/Coi-04c1.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-    $(this).attr("src", "assets/render/Coi-04c1.png");
+    $(this).attr("src", "assets/render/Coi-04c1.jpg");
     next();
     });
     $("#immagine")
@@ -2164,12 +2164,12 @@ $(document).on('click', '.Coi-04c2', function() {
     caption = Coi_04c2 + "<br><br><div class='continua alc-ssb' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
     type();
 
-    $("#immagine_2").attr("src", "assets/render/Coi-04c2.png")
+    $("#immagine_2").attr("src", "assets/render/Coi-04c2.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-    $(this).attr("src", "assets/render/Coi-04c2.png");
+    $(this).attr("src", "assets/render/Coi-04c2.jpg");
     next();
     });
     $("#immagine")
@@ -2186,12 +2186,12 @@ $(document).on('click', '.alc-ssb', function() {
     caption = alc_ssb + "<br><br><div class='continua Cai-04c3' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
     type();
 
-    $("#immagine_2").attr("src", "assets/render/Alc-ss.png")
+    $("#immagine_2").attr("src", "assets/render/Alc-ss.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-    $(this).attr("src", "assets/render/Alc-ss.png");
+    $(this).attr("src", "assets/render/Alc-ss.jpg");
     next();
     });
     $("#immagine")
@@ -2208,12 +2208,12 @@ $(document).on('click', '.Cai-04c3', function() {
     caption = Cai_04c3 + "<br><br><div class='continua fin-alt2a' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
     type();
 
-    $("#immagine_2").attr("src", "assets/render/Cai-04c3.png")
+    $("#immagine_2").attr("src", "assets/render/Cai-04c3.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-    $(this).attr("src", "assets/render/Cai-04c3.png");
+    $(this).attr("src", "assets/render/Cai-04c3.jpg");
     next();
     });
     $("#immagine")
@@ -2230,7 +2230,7 @@ $(document).on('click', '.Cai-04c3', function() {
     caption = fin_alt2b + "<br><br><div class='continua fin-alt1' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
     type();
 
-    $("#immagine").attr("src", "assets/render/fin-alt2.png")
+    $("#immagine").attr("src", "assets/render/fin-alt2.jpg")
 });*/
 
 $(document).on('click', '.fin-alt1', function() {
@@ -2238,12 +2238,12 @@ $(document).on('click', '.fin-alt1', function() {
     caption = fin_alt1;
     type();
 
-    $("#immagine_2").attr("src", "assets/render/fin-alt.png")
+    $("#immagine_2").attr("src", "assets/render/fin-alt.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-    $(this).attr("src", "assets/render/fin-alt.png");
+    $(this).attr("src", "assets/render/fin-alt.jpg");
     next();
     });
     $("#immagine")
@@ -2260,12 +2260,12 @@ $(document).on('click', '.alc-ssd', function() {
     caption = alc_ssd + "<br><br><div class='continua Bai-01-alt' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
     type();
 
-    $("#immagine_2").attr("src", "assets/render/Alc-ss.png")
+    $("#immagine_2").attr("src", "assets/render/Alc-ss.jpg")
     $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
     $("#immagine")
     .delay(500)
     .queue(function (next) {
-    $(this).attr("src", "assets/render/Alc-ss.png");
+    $(this).attr("src", "assets/render/Alc-ss.jpg");
     next();
     });
     $("#immagine")
@@ -2281,13 +2281,13 @@ $(document).on('click', '.Bai-01-alt', function() {
   caption = Bai_01_alt + "<br><br><div class='continua Bai-02-alt' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Bai-01.png")
+  $("#immagine_2").attr("src", "assets/render/Bai-01.jpg")
 
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Bai-01.png");
+  $(this).attr("src", "assets/render/Bai-01.jpg");
   next();
   });
   $("#immagine")
@@ -2305,12 +2305,12 @@ $(document).on('click', '.Bai-02-alt', function() {
   type();
 
   $("#immagine_4").css("opacity","0");
-  $("#immagine_2").attr("src", "assets/render/Bai-02.png")
+  $("#immagine_2").attr("src", "assets/render/Bai-02.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Bai-02.png");
+  $(this).attr("src", "assets/render/Bai-02.jpg");
   next();
   });
   $("#immagine")
@@ -2327,12 +2327,12 @@ $(document).on('click', '.Bai-03-alt', function() {
   caption = Bai_03_alt + "<br><br><div class='continua Bai-032' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
   type();
 
-  $("#immagine_2").attr("src", "assets/render/Bai-03.png")
+  $("#immagine_2").attr("src", "assets/render/Bai-03.jpg")
   $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
   $("#immagine")
   .delay(500)
   .queue(function (next) {
-  $(this).attr("src", "assets/render/Bai-03.png");
+  $(this).attr("src", "assets/render/Bai-03.jpg");
   next();
   });
   $("#immagine")
@@ -2349,12 +2349,12 @@ $(document).on('click', '.Bai-032', function() {
 caption = Bai_032 + "<br><br><div class='continua Bai-04' style:='cursor:pointer;'> &#60--Click here to continue--&#62 </div>";
 type();
 
-$("#immagine_2").attr("src", "assets/render/Bai-03.png")
+$("#immagine_2").attr("src", "assets/render/Bai-03.jpg")
 $("#immagine").css("animation", "fadeOut 0.5s ease-in forwards")
 $("#immagine")
 .delay(500)
 .queue(function (next) {
-$(this).attr("src", "assets/render/Bai-03.png");
+$(this).attr("src", "assets/render/Bai-03.jpg");
 next();
 });
 $("#immagine")
