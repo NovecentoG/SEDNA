@@ -54,7 +54,7 @@ function type() {
     captionEl.html(caption.substr(0, captionLength));
     if(captionLength < caption.length+1) {
         captionLength=captionLength+5; //imposta qunte lettere devono apparire a ripetizione
-        setTimeout('type()', 0); //imposta quanto tempo deve passare tra la scrittura di una lettera è l'alrtra
+        requestAnimationFrame(type); //imposta quanto tempo deve passare tra la scrittura di una lettera è l'alrtra
     } else {
         captionLength = 0;
         caption = '';
@@ -65,7 +65,7 @@ function typeFast() {
     captionEl.html(caption.substr(0, captionLength));
     if(captionLength < caption.length+1) {
         captionLength=captionLength+20; //imposta qunte lettere devono apparire a ripetizione
-        setTimeout('type()', 0); //imposta quanto tempo deve passare tra la scrittura di una lettera è l'alrtra
+        requestAnimationFrame(type); //imposta quanto tempo deve passare tra la scrittura di una lettera è l'alrtra
     } else {
         captionLength = 0;
         caption = '';
@@ -78,16 +78,14 @@ function typeFast() {
 $(document).ready( function() {
   $("#title").css("animation","fadeIn 1s ease-in forwards");
   $("footer").css("animation","fadeIn 1s ease-in forwards"); //fai apparire il footer
-  $(".switch-label").trigger("click"); //simula click su lable (avvia effetto CTR)
+  $(".switch-label").trigger("click"); //simula click su lable (avvia effetto CRT)
   $(".switch-label").css("display","none"); //togli swich label
 })
 
 //mostra un icona se lo userAgent del browser non è WebKit (principalmente Firefox e IE)
 $(document).ready( function() {
-  if (navigator.userAgent.indexOf('AppleWebKit') != -1) {}
-  else{
-    $("#alerbrowsIco").css("display","block");
-  }
+  if (navigator.userAgent.indexOf('Trident') !== -1) {$("#alerbrowsIco").css("display","block");}
+  else{}
 });
 
 function checkSize () {
